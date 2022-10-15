@@ -142,9 +142,9 @@ transition: 0.5s linear;
     }
     .team__content{
         display: grid;
-        grid-template-columns: repeat(3,25%);
-        gap: 7rem;
-        justify-content: center;
+       grid-template-columns: repeat(3,1fr);
+       gap: 3rem;
+        
     }
     .team__item{
         cursor: progress;
@@ -171,4 +171,110 @@ transition: 0.5s linear;
         margin-top: 0.5rem;
         text-align:left;
         font-size: 18px;
+    } 
+                                            /* end fixed team */
+                                            /* start web__logo */
+         
+       .web__logo{
+        height: 10vh;
+        background-color: whitesmoke;
     }
+
+    .web__logo .container h1{
+        color: dimgray;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
+                                               /* end  web__logo  */
+                                               /* start socal media */
+       .social__media{
+        height: 5vh;
+        background-color: beige;
+        text-align: center;
+        padding-top: 0.2rem;
+       }
+       .social__media a{
+        color: #000;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size:  20px; 
+        transition: color 0.5s;
+       }
+       .social__media a :hover{
+        color: dimgray;
+       }
+                                                /* .social__media end  */
+                                                /* footer start */
+
+    .footer{
+        height: 10vh;
+        background-color: rgb(174, 168, 168);
+        display: flex;
+        text-align: center;
+    }   
+    .footer p{
+        color: #fff;
+        margin-top: 15px;
+        font-size: 18px;
+        letter-spacing: 2px;
+    
+    }        
+    .navbar_nav .fa-bars{
+        display: none;  
+    }               
+     /* site end  */    
+     /* start responsive */
+
+@media screen and (max-width:768px){
+    
+    .navbar_nav .fa-bars{
+        display:block;
+    
+    }
+    .navbar_nav a{
+        display:none;  
+        
+    }    
+
+   .navbar_nav .fa-magnifying-glass{
+        display: none;
+    }
+ 
+    .banner h1 {
+        width: 80%;
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .banner span {
+        font-size: 15px;
+        font-family: PMingLiU-ExtB;
+        letter-spacing: 3px;
+    }
+    
+
+.blog__content {
+    display: grid;
+    grid-template-columns:100%;
+    gap: 2.5rem;
+}
+.team__title {
+    text-align: center;
+}
+.team__title p{
+    width: 100%;
+    margin-left: 0%;
+    text-align: justify;
+}
+.team__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+   
+}
+}
+
+
+
+      
+    
